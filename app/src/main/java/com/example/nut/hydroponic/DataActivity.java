@@ -43,6 +43,8 @@ public class DataActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_data);
         ImageButton back = (ImageButton) findViewById(R.id.imbtnback);
         back.setOnClickListener(new View.OnClickListener() {
