@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 double distance = dataSnapshot.child("distance").getValue(Double.class);
-                textviewdis.setText(String.valueOf(distance));
+                textviewdis.setText(String.valueOf(18 - distance));
 
 
                 Log.d("Distance", "" + distance);

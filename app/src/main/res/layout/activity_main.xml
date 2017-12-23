@@ -68,7 +68,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="57dp"
                         android:gravity="center_vertical"
-                        android:text="ค่าระดับน้ำ"
+                        android:text="ค่าระดับน้ำ(cm.)"
                         android:textAlignment="center"
                         android:textSize="24sp"
                         android:textStyle="bold" />

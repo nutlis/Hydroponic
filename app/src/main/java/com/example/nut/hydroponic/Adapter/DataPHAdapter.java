@@ -31,8 +31,8 @@ public class DataPHAdapter extends RecyclerView.Adapter<DataPHAdapter.MyViewHold
     public void onBindViewHolder(MyViewHolder holder, int position) {
         DataPH data = dataPHList.get(position);
 
-        holder.phTv.setText(data.getPhsensor());
-        holder.disTv.setText(data.getDistance());
+        holder.phTv.setText(String.valueOf(data.getPhsensor()));
+        holder.disTv.setText(String.valueOf(data.getDistance()));
     }
 
     @Override
