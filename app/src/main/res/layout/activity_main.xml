@@ -40,7 +40,7 @@
                         android:gravity="center_vertical"
                         android:text="ค่า pH"
                         android:textAlignment="center"
-                        android:textSize="24sp"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -71,7 +71,7 @@
                         android:gravity="center_vertical"
                         android:text="ค่าระดับน้ำ(cm.)"
                         android:textAlignment="center"
-                        android:textSize="24sp"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -91,14 +91,15 @@
 
     <LinearLayout
         android:id="@+id/linearlayout"
-        android:layout_width="245dp"
-        android:layout_height="223dp"
+        android:layout_width="253dp"
+        android:layout_height="234dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.845">
+        app:layout_constraintVertical_bias="0.808">
 
         <TextView
             android:id="@+id/textviewread"
@@ -137,7 +138,7 @@
         <TextView
             android:id="@+id/textviewst"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:text="Stats"
             android:textAlignment="center"
