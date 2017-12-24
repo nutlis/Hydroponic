@@ -10,11 +10,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="325dp">
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -22,7 +26,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/textviews"
                     android:layout_width="match_parent"
                     android:layout_height="53dp"
                     android:text="สถิติ"
@@ -30,20 +34,52 @@
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textviewdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="วันที่"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textviewp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="pH"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textviewd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="ระดับน้ำ"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/statsRV"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    tools:listitem="@layout/item_statistics"/>
+                    tools:listitem="@layout/item_statistics" >
+
+                </android.support.v7.widget.RecyclerView>
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
-        <ImageButton
-            android:id="@+id/imbtnback"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/cardview_shadow_end_color"
-            app:srcCompat="@drawable/ic_assignment_return_black_24dp" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

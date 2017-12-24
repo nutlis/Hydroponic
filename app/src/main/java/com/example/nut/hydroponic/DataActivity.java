@@ -46,14 +46,7 @@ public class DataActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_data);
-        ImageButton back = (ImageButton) findViewById(R.id.imbtnback);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(DataActivity.this ,MainActivity.class);
-                startActivity(i);
-            }
-        });
+
 
         mRecycler = findViewById(R.id.statsRV);
         mRecycler.setHasFixedSize(true);

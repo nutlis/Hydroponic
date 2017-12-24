@@ -33,6 +33,7 @@ public class DataPHAdapter extends RecyclerView.Adapter<DataPHAdapter.MyViewHold
 
         holder.phTv.setText(String.valueOf(data.getPhsensor()));
         holder.disTv.setText(String.valueOf(data.getDistance()));
+        holder.dateTv.setText(data.getDate());
     }
 
     @Override
@@ -41,13 +42,14 @@ public class DataPHAdapter extends RecyclerView.Adapter<DataPHAdapter.MyViewHold
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView phTv, disTv;
+        TextView phTv, disTv, dateTv;
 
         MyViewHolder(View itemView) {
             super(itemView);
 
             phTv = itemView.findViewById(R.id.phTv);
             disTv = itemView.findViewById(R.id.distanceTv);
+            dateTv = itemView.findViewById(R.id.dateTv);
         }
     }
 }

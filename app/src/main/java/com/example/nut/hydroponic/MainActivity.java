@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-        LinearLayout stats = (LinearLayout) findViewById(R.id.linearlayout);
+        ImageView stats = (ImageView) findViewById(R.id.imageviewstats);
         stats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
